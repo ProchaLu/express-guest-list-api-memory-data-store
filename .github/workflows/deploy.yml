@@ -36,4 +36,4 @@ jobs:
         with:
           project: "lukasprocha-express-gue-45"
           entrypoint: "index.ts"
-          root: "/"
+          root: "."
