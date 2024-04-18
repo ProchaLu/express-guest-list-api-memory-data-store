@@ -1,4 +1,4 @@
-import express from 'express';
+import express from 'npm:express@4.18';
 
 const app = express();
 
