@@ -2,6 +2,6 @@ FROM node:20-alpine
 
 RUN apk update && apk add --no-cache zsh git
 
-RUN corepack enable && corepack prepare pnpm@latest --activate
+RUN npm install -g pnpm
 
 SHELL ["/bin/zsh", "-c"]
