@@ -5,7 +5,10 @@ FROM node:20-alpine
 RUN apk update && apk add --no-cache zsh git
 
 # Install the latest version of pnpm
-RUN npm install -g pnpm
+RUN corepack enable
+RUN corepack prepare pnpm@latest --activate
+
+
 
 # Set zsh as the default shell
 SHELL ["/bin/zsh", "-c"]
