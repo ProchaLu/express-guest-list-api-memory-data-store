@@ -1,8 +1,8 @@
 # Use the node:20-alpine base image
 FROM node:20-alpine
 
-# Install zsh
-RUN apk update && apk add --no-cache zsh
+# Install zsh and Git
+RUN apk update && apk add --no-cache zsh git
 
 # Install the latest version of pnpm
 RUN npm install -g pnpm
