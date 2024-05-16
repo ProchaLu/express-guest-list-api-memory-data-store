@@ -19,4 +19,4 @@ FROM node:lts-alpine
 # https://github.com/upleveled/express-guest-list-api-memory-data-store/pull/294#discussion_r1601759357
 RUN apk update && apk add --no-cache zsh git yq
 
-RUN corepack enable
+RUN corepack enable && corepack prepare pnpm@$(yq eval '.engines.pnpm' package.json) --activate
