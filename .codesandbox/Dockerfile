@@ -1,4 +1,4 @@
-FROM node:20-alpine
+FROM node:lts-alpine
 
 RUN apk update && apk add --no-cache zsh git yq
 
